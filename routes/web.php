@@ -9,3 +9,7 @@ Route::get('/', function () {
 
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
