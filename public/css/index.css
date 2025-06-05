@@ -1,0 +1,29 @@
+@import 'color.css';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 0.8fr 5fr;
+    gap: 0px 0px;
+    height: 100vh;
+}
+
+.sidebar{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color:#1E1E1E;
+
+}
+.content{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: #121212;
+}
+
